@@ -8,6 +8,10 @@
     
   </head>
   <style>
+    *{
+      margin: 0;
+    padding: 3px;
+    }
     footer {
     height: 15vh;
     background-color: #dbdbdb;
@@ -50,11 +54,6 @@ nav ul {
     align-items: center;
 }
 
-.profile {
-    position: absolute;
-    left: 1000px;
-}
-
 nav ul li {
     top: 60px;
     list-style: none;
@@ -85,23 +84,41 @@ nav ul li a:hover {
       font-style: italic;
       text-align: center;
     }
+    .home {
+    position: absolute;
+    left: 100px;
+}
+
+.about {
+    position: absolute;
+    left: 200px;
+}
+
+.tasks {
+    position: absolute;
+    left: 300px;
+}
   </style>
   <body>
     <header>
       <nav>
-        <div class="logo">
-          <img src="Logohap.png" alt="" width="215px" class="center" />
-        </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <br />
-          <li><a href="About.html">About</a></li>
-          <br />
-          <li><a href="tasks.html">Tasks</a></li>
-          <br />
-        </ul>
+          <div class="logo">
+              <img src="Logohap.png" alt="" width="215px" class="center">
+
+          </div>
+          <ul>
+              <li class="home"><a href="index.html">Home</a></li><br>
+          </ul>
+
+          <ul>
+              <li class="about"><a href="about.html">About</a></li><br>
+          </ul>
+          <ul>
+              <li class="tasks"><a href="tasks.html">Tasks</a></li><br>
+          </ul>
       </nav>
-    </header>
+  </header>
+    <br>
     <hr>
     <main>
       <br />
