@@ -385,7 +385,7 @@ section .events ul li .details a:hover {
 }
 
 .events {
-    top: 360px;
+    top: 285px;
     position: absolute;
     left: 35px;
     cursor: pointer;
@@ -401,7 +401,7 @@ section .events ul li .details a:hover {
 }
 
 .schedule {
-    top: 360px;
+    top: 285px;
     position: absolute;
     right: 35px;
     cursor: pointer;
