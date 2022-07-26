@@ -30,8 +30,20 @@
                 <li class="tasks"><a href="tasks.html">Tasks</a></li><br>
             </ul>
             <ul>
-                <a href="profile"><img src="Blank profile.webp" class="prof" alt="" height="50" class="center"></a>
+                <summary class="Header-link" aria-label="View profile and more" aria-haspopup="menu" role="button">
+                <a href="profile"><img src="Blank profile.webp" class="prof" data-view-component="true" alt="" height="50" class="center"></a>
+                <span class="unread-indicator js-feature-preview-indicator" style="top: 1px;" hidden></span>
+                <span class="dropdown-caret">
+                </span><br><br>
+                </summary>
+                <select name="options">
+                    <option value="profile">Profile</option>
+                    <option value="help">Help</option>
+                    <option value="settings">Settings</option>
+                    <option value="logout">Logout</option>
+                </select>
             </ul>
+            
         </nav>
     </header>
     <br>
