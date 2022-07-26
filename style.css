@@ -221,6 +221,7 @@ hr {
     border: 0;
     border-radius: 5px;
 }
+
 .schedule:focus{
     outline:0;
 }
