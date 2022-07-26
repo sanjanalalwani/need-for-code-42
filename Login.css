@@ -76,9 +76,9 @@ video{
     border-bottom:2px rgb(241, 241, 241) solid;
     display: block;
     width:100%;
-    padding: 15px 0;
+    padding: 15px 45px;
     font-size: 18px;
-    color:rgb(255, 255, 255);
+    color:rgb(45, 39, 39);
 }
 .form_control input:focus,
 .form_control input:valid{
