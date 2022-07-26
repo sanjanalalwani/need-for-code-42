@@ -1,42 +1,188 @@
-*{
+* {
     margin: 0;
     padding: 3px;
 }
-header{
-    background-color: rgb(137 47 47);
+
+header {
+    background-color: #974e4e;
 }
-nav{
+
+nav {
     display: flex;
 }
-.logo{
+
+.logo {
     width: 215px;
     display: flex;
-   align-items: center;
+    align-items: center;
 }
-.center{
+
+.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-nav ul{
+
+nav ul {
+    position: absolute;
+    left: 300px;
     height: 90px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-nav ul li{
+
+.profile {
+    position: absolute;
+    left: 1000px;
+}
+
+nav ul li {
     top: 60px;
     list-style: none;
-    padding: 0 20px;
+    padding: 0 40px;
 }
-nav ul li a{
+
+nav ul li a {
+    font-family: 'Ubuntu', sans-serif;
     color: white;
     text-decoration: none;
 }
-footer{
+
+nav ul li a:hover {
+    font-size: 17px;
+    color: thistle;
+}
+
+footer {
     height: 15vh;
-    background-color: #dbdbdb;;
+    background-color: #dbdbdb;
+    ;
     color: #836868;
     text-align: center;
+}
+
+hr {
+    background-color: rgb(177, 143, 143);
+    border: none;
+}
+
+.home {
+    position: absolute;
+    left: 100px;
+}
+
+.about {
+    position: absolute;
+    left: 200px;
+}
+
+.tasks {
+    position: absolute;
+    left: 300px;
+}
+
+.fade {
+    color: #4d4a4a;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 65px;
+    padding-top: 10vh;
+    height: 20vh;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.impdiv {
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#welc {
+    animation: showup 7s 1;
+    animation-fill-mode: forwards;
+    padding-left: 420px;
+}
+
+#topart {
+    width: 0px;
+    animation: reveal 7s 1;
+    animation-fill-mode: forwards;
+}
+
+#topart span {
+    margin-left: -355px;
+    animation: slidein 7s 1;
+    animation-fill-mode: forwards;
+}
+#left{
+    padding-top: 120px;
+    text-align: left;
+}
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: -110px;
+    }
+
+    100% {
+        margin-left: -110px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 500px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        width: 500px;
+    }
 }
