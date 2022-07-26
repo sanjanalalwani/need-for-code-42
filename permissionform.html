@@ -14,28 +14,34 @@
     <div class="container">
         <h1>Permission Form:</h1>
         <p>Please fill in the given details to schedule an event. The teachers will get back to you at the earliest.</p>
-        <form action="index.html">
+        <form name="myemailform" method="post">
             <div class="form_control">
-                <input type="email" placeholder="E-mail" required />
+                <input type="email" placeholder="E-mail" name="email" required />
                 <label></label>
             </div>
             <div class="form_control">
-                <input type="text" placeholder="Committee Name" required />
+                <input type="text" placeholder="Committee Name" name="comittee" required />
                 <label></label>
             </div>
             <div class="form_control">
-                <input type="email" placeholder="Event Name" required />
+                <input type="text" placeholder="Event Name" name="ename"required />
                 <label></label>
             </div>
             <div class="form_control">
-                <input type="date" placeholder="Date" required />
+                <input type="date" placeholder="Date" name="date" required />
                 <label></label>
             </div>
             <div class="form_control">
-                <input type="text" placeholder="Event Description" required />
+                <input type="text" placeholder="Event Description" name="desc" required />
                 <label></label>
             </div>
-            <button class="btn">Submit</button>
+            <button class="btn" id="Mybtn">Submit</button>
+            <script>
+                document.getElementById("Mybtn").addEventListener("click", myFunction);
+                function myFunction() {
+                  window.location.href="index.html";
+                }
+                </script>
         </form>
     </div>
 </body>
