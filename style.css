@@ -56,6 +56,17 @@ nav ul li a:hover {
     border-radius: 50px;
     color: thistle;
 }
+select{
+    position: absolute;
+    right: 10px;
+    display: flex;
+    text-align: right;
+    float: right;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
 
 footer {
     height: 15vh;
