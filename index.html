@@ -45,9 +45,13 @@
         <div class="fade" id="left">Upcoming Tasks:</div>
     </div>
     <div class="schedulebutton">
-        <button class="schedule">
-            Schedule an Event
-        </button>
+        <button class="schedule" id="myBtn"> Schedule an Event -> </button>
+    <script>
+      document.getElementById("myBtn").addEventListener("click", myFunction);
+      function myFunction() {
+        window.location.href="permissionform.html";
+      }
+    </script>
     </div>
     </main>
     <footer>
