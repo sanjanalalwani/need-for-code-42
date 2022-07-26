@@ -48,6 +48,19 @@ body{
     border: 0;
     border-radius: 5px;
 }
+.btn2{
+    cursor:pointer;
+    display:inline-block;
+    width:100%;
+    background: rgb(68, 59, 74);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+}
+
 .form_control{
     position:relative;
     margin:20px 0px 40px;

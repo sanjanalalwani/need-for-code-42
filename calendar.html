@@ -1,162 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="calendar.css">
-    <link rel="stylesheet" href="script.js">
-</head>
-<body>
-<div class="container">
-    <div class="calendar">
-      <div class="front">
-        <div class="current-date">
 
-        <a href="#" class="previous">&laquo;Prev</a>
-        
-
-          <h1>July 2022</h1>	
-
-          <a href="#" class="next">Next&raquo;</a>
-          
-
-        </div>
-
-        <div class="current-month">
-          <ul class="week-days">
-            <li>MON</li>
-            <li>TUE</li>
-            <li>WED</li>
-            <li>THU</li>
-            <li>FRI</li>
-            <li>SAT</li>
-            <li>SUN</li>
-          </ul>
-
-          <div class="weeks">
-            <div class="first">
-              <span class="last-month">28</span>
-              <span class="last-month">29</span>
-              <span class="last-month">30</span>
-              <span class="last-month">31</span>
-              <span>01</span>
-              <span>02</span>
-              <span>03</span>
-            </div>
-
-            <div class="second">
-              <span>04</span>
-              <span>05</span>
-              <span>06</span>
-              <span>07</span>
-              <span>08</span>
-              <span>09</span>
-              <span>10</span>
-            </div>
-
-            <div class="third">
-              <span>11</span>
-              <span>12</span>
-              <span>13</span>
-              <span>14</span>
-              <span>15</span>
-              <span>16</span>
-              <span>17</span>
-            </div>
-
-            <div class="fourth">
-              <span>18</span>
-              <span>19</span>
-              <span>20</span>
-              <span>21</span>
-              <span>22</span>
-              <span>23</span>
-              <span>24</span>
-            </div>
-
-            <div class="fifth">
-              <span>25</span>
-              <span class="event">26</span>
-              <span class="active">27</span>
-              <span>28</span>
-              <span>29</span>
-              <span>30</span>
-              <span>31</span>
-            </div>
-          </div>
+    <link rel="stylesheet" href="calendar.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton">Back</button>
+          <button id="nextButton">Next</button>
         </div>
       </div>
 
-      <div class="back">
-        <input placeholder="What's the event?">
-        <div class="info">
-          <div class="date">
-            <p class="info-date">
-            Date: <span>26th July, 2022</span>
-            </p>
-            <p class="info-time">
-              Time: <span>11:00 AM</span>
-            </p>
-          </div>
-          <div class="address">
-            <p>
-              Address: <span>Thadomal Shahani Engineering College</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="actions">
-          <button class="save">
-            Save <i class="ion-checkmark"></i>
-          </button>
-          <button class="dismiss">
-            Dismiss <i class="ion-android-close"></i>
-          </button>
-        </div>
+      <div id="weekdays">
+        <div>Sunday</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
       </div>
 
+      <div id="calendar"></div>
     </div>
+
+    <div id="newEventModal">
+      <h2>New Event</h2>
+
+      <input id="eventTitleInput" placeholder="Event Title" />
+
+      <button id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Event</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">Delete</button>
+      <button id="closeButton">Close</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+    
+    <div class="permissionbutton">
+      <button class="btn" id="myBtn2"> Permission Form </button>
+  <script>
+    document.getElementById("myBtn2").addEventListener("click", myFunction);
+    function myFunction() {
+      window.location.href="permissionform.html";
+    }
+  </script>
+  <br><br><br><br>
   </div>
 
-      <div class="back">
-        <input placeholder="What's the event?">
-        <div class="info">
-          <div class="date">
-            <p class="info-date">
-            Date: <span>31st July, 2022</span>
-            </p>
-            <p class="info-time">
-              Time: <span>11:00 AM</span>
-            </p>
-          </div>
-          <div class="address">
-            <p>
-              Address: <span>Thadomal Shahani Engineering College</span>
-            </p>
-          </div>
-        </div>
+    <script src="./script.js"></script>
 
-        <div class="actions">
-          <button class="save">
-            Save <i class="ion-checkmark"></i>
-          </button>
-          <button class="dismiss">
-            Dismiss <i class="ion-android-close"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="permissionbutton">
-    <button class="permissionform" id="myBtn"> Permission Form -> </button>
-<script>
-  document.getElementById("myBtn").addEventListener("click", myFunction);
-  function myFunction() {
-    window.location.href="permissionform.html";
-  }
-</script>
-</div>
-</body>
+
+  </body>
 </html>
