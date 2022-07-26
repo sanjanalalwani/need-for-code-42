@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happenings | Login</title>
     <link rel="stylesheet" href="form.css">
-    <script src="Login.js"></script>
 </head>
 
 <body>
     <div class="container">
         <h1>Permission Form:</h1>
         <p>Please fill in the given details to schedule an event. The teachers will get back to you at the earliest.</p>
-        <form name="myemailform" method="post">
+        <form name="myForm" method="post">
             <div class="form_control">
                 <input type="email" placeholder="E-mail" name="email" required />
                 <label></label>
@@ -24,7 +23,7 @@
                 <label></label>
             </div>
             <div class="form_control">
-                <input type="text" placeholder="Event Name" name="ename"required />
+                <input type="text" placeholder="Event Name" name="ename" required />
                 <label></label>
             </div>
             <div class="form_control">
@@ -35,13 +34,15 @@
                 <input type="text" placeholder="Event Description" name="desc" required />
                 <label></label>
             </div>
-            <button class="btn" id="Mybtn">Submit</button>
+            <div class="schedulebutton">
+                <button class="schedule" id="myBtn"> Schedule an Event -> </button>
             <script>
-                document.getElementById("Mybtn").addEventListener("click", myFunction);
-                function myFunction() {
-                  window.location.href="index.html";
-                }
-                </script>
+              document.getElementById("myBtn").addEventListener("click", myFunction);
+              function myFunction() {
+                window.location.href="index.html";
+              }
+            </script>
+            </div>
         </form>
     </div>
 </body>
