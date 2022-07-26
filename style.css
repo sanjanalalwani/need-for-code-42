@@ -51,7 +51,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    font-size: 17px;
+    background-color: #9b4040;
+    border:0px;
+    border-radius: 50px;
     color: thistle;
 }
 
@@ -185,4 +187,32 @@ hr {
         opacity: 1;
         width: 500px;
     }
+}
+.prof{
+    border:0px;
+    border-radius: 50px;
+    position:absolute;
+    left:1120px;
+    top:24px;
+}
+.schedule{
+    top:360px;
+    position:absolute;
+    right:35px;
+    cursor:pointer;
+    display:inline-block;
+    width:30%;
+    background: rgb(68, 59, 74);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+}
+.schedule:focus{
+    outline:0;
+}
+.schedule:active{
+    transform:scale(0.98);
 }
