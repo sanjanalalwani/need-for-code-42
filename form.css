@@ -85,10 +85,10 @@ body{
     color:rgb(252, 146, 54);
     transform: translateY(-30px);
 }
-.schedule{
-    top:360px;
+.submit{
+    top: 577px;
     position:absolute;
-    right:35px;
+    right: 510px;
     cursor:pointer;
     display:inline-block;
     width:30%;
