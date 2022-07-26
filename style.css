@@ -364,6 +364,11 @@ section .events ul li .details p {
     padding: 0;
     font-size: 16px;
 }
+.principal{
+    position: absolute;
+    left: 400px;
+}
+
 
 /* Styling the links of details
         class of events section */
@@ -428,7 +433,7 @@ section .events ul li .details a:hover {
 .dropbtn {
     position: absolute;
     top: 4px;
-    left: 286px;
+    left: 270px;
     background-color: transparent;
     color: white;
     padding: 11px;
