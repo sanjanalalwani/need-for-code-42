@@ -61,12 +61,12 @@ body{
 .form_control input{
     background-color: transparent;
     border:0;
-    border-bottom:2px #fff solid;
+    border-bottom:2px rgb(241, 241, 241) solid;
     display: block;
     width:100%;
     padding: 15px 0;
     font-size: 18px;
-    color:#fff;
+    color:rgb(255, 255, 255);
 }
 .form_control input:focus,
 .form_control input:valid{
