@@ -207,6 +207,7 @@
       background: #5889a0;
       outline: none;
   }
+
   
   /* Flip animation */
   
@@ -217,3 +218,18 @@
   .front, .back {
       backface-visibility: hidden;
   }
+  .permissionform{
+    top:650px;
+    position:absolute;
+    right:536px;
+    cursor:pointer;
+    display:inline-block;
+    width:30%;
+    background: rgb(68, 59, 74);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+}
