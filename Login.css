@@ -4,7 +4,7 @@
 }
 body{
     font-family: "Muli",sans-serif;
-    background-color:black;
+    background-color:rgb(152, 60, 60);
     color:azure;
     display:flex;
     flex-direction:column;
@@ -14,7 +14,19 @@ body{
     overflow:hidden;
     margin:0;
 }
+.image{
+    position: absolute;
+    left:160px;
+}
+video{
+    box-shadow: 0px 0px 3px 3px rgb(68, 67, 67);
+    border:0px;
+    border-radius: 10px;
+    
+}
 .container{
+    position:absolute;
+    right:160px;
     background-color: rgb(11, 45, 45);
     padding: 20px 40px;
     border-radius:4px;
@@ -27,7 +39,7 @@ body{
     text-align: center;
     text-decoration: none;
     color: rgb(53, 144, 144);
-    padding:15px;
+    padding-left:124px;
     font-family: inherit;
     font-size:16px;
     border:0;
