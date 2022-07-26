@@ -95,8 +95,8 @@ p{
     text-align:center;
 }
 form {
-    animation: fadeIn .5s forwards;
-    animation-delay: 1s; /* optional */
+    animation: fadeIn 1s forwards;
+    animation-delay: 2s; /* optional */
     opacity: 0;
   }
   
