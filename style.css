@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 3px;
+}
+header{
+    background-color: rgb(146, 112, 131);
+}
+nav{
+    display: flex;
+}
+.logo{
+    width: 215px;
+    display: flex;
+   align-items: center;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+nav ul{
+    height: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    top: 60px;
+    list-style: none;
+    padding: 0 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer{
+    height: 15vh;
+    background-color: #dbdbdb;;
+    color: #836868;
+    text-align: center;
+}
