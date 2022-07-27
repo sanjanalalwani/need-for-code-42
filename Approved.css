@@ -70,15 +70,6 @@ select {
     position: relative;
     display: inline-block;
 }
-
-footer {
-    height: 15vh;
-    background-color: #dbdbdb;
-    ;
-    color: #836868;
-    text-align: center;
-}
-
 hr {
     background-color: rgb(177, 143, 143);
     border: none;
@@ -98,123 +89,11 @@ hr {
     position: absolute;
     left: 300px;
 }
-
-.fade {
-    color: #4d4a4a;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-    font-family: 'Roboto';
-    font-weight: 300;
-    font-size: 60px;
-    padding-top: 10px;
-    height: 20vh;
-    overflow: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -webkit-transform: translate3d(0, 0, 0);
-}
-
-.impdiv {
-    text-align: center;
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-#welc {
-    animation: showup 7s 1;
-    animation-fill-mode: forwards;
-    padding-left: 420px;
-}
-
-#topart {
-    width: 0px;
-    animation: reveal 7s 1;
-    animation-fill-mode: forwards;
-}
-
-#topart span {
-    margin-left: -355px;
-    animation: slidein 7s 1;
-    animation-fill-mode: forwards;
-}
-
-#left {
-    padding-top: 120px;
-    
-}
-
-@keyframes showup {
-    0% {
-        opacity: 0;
-    }
-
-    20% {
-        opacity: 1;
-    }
-
-    80% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes slidein {
-    0% {
-        margin-left: -800px;
-    }
-
-    20% {
-        margin-left: -800px;
-    }
-
-    35% {
-        margin-left: -110px;
-    }
-
-    100% {
-        margin-left: -110px;
-    }
-}
-
-@keyframes reveal {
-    0% {
-        opacity: 0;
-        width: 0px;
-    }
-
-    20% {
-        opacity: 1;
-        width: 0px;
-    }
-
-    30% {
-        width: 500px;
-    }
-
-    80% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 1;
-        width: 500px;
-    }
-}
-
-.prof {
-    border: 0px;
-    border-radius: 55px;
-}
-
 /* Styling the body */
 body {
     background-color: #dfd7d7;
-    margin: 0;
-    padding: 0;
+    margin: 3px;
+    padding: 3px;
 }
 
 /* Styling section, giving background
@@ -389,8 +268,7 @@ section .events ul li .details a:hover {
     color: #fff;
     border-color: #bd6180;
 }
-
-.events {
+events {
     top: 285px;
     position: absolute;
     left: 35px;
@@ -483,4 +361,31 @@ section .events ul li .details a:hover {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: transparent;
+}
+table{
+    border:0px;
+    border-radius: 10px;
+    font-size: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(178 112 129) ;
+    padding:10px;
+    border:2px solid rgb(105, 45, 45);
+
+}
+tr{
+    color:#ddd;
+    margin: 10px;
+    padding:10px;
+    border:2px solid rgb(113, 60, 60);
+}
+td{
+    margin:10px;
+    padding:10px;
+    color:#ddd;
+    border:2px solid rgb(113, 60, 60);
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
 }
