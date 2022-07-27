@@ -484,3 +484,8 @@ section .events ul li .details a:hover {
 .dropdown:hover .dropbtn {
     background-color: transparent;
 }
+#myBtn3{
+    top: 285px;
+    position: absolute;
+    right: 535px;
+}

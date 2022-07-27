@@ -363,6 +363,9 @@ events {
     background-color: transparent;
 }
 table{
+    position:absolute;
+    top:330px;
+    left:360px;
     border:0px;
     border-radius: 10px;
     font-size: 35px;
@@ -386,6 +389,9 @@ td{
     border:2px solid rgb(113, 60, 60);
 }
 h1{
+    position:absolute;
+    top:230px;
+    left:41%;
     text-align: center;
     font-family: sans-serif;
 }
