@@ -433,7 +433,7 @@ section .events ul li .details a:hover {
 /* Dropdown Button */
 .dropbtn {
     position: absolute;
-    top: 4px;
+    top: 1px;
     left: 270px;
     background-color: transparent;
     color: white;
